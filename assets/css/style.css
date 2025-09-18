@@ -41,7 +41,9 @@ body.dark-mode .highlight {
 #darkModeToggle:hover {
   background-color: #e07b00;
 }
-
+.logo {
+    background-image: url('assets/logo.png');
+}
 /* Icone (lună/soare) */
 #darkModeToggle i {
   font-size: 20px;
