@@ -501,7 +501,32 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+.whatsapp-button {
+  position: fixed;
+  bottom: 80px;       /* distanța de jos (subțire față de back-to-top) */
+  right: 20px;        /* margine dreapta */
+  width: 50px;
+  height: 50px;
+  background-color: #25D366;  /* verde WhatsApp */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
 
+/* Efect hover */
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+/* Icon WhatsApp */
+.whatsapp-button i {
+  color: white;
+  font-size: 24px;
+}
 /* săgeți custom cu CSS */
 .carousel-control-prev-icon::after {
   content: '‹';
