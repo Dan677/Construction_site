@@ -317,7 +317,34 @@ a:hover {
   -webkit-box-shadow: 0px 3px 10px 0px rgba(213, 213, 213, 0.4);
   -moz-box-shadow: 0px 3px 10px 0px rgba(213, 213, 213, 0.4);
   box-shadow: 0px 3px 10px 0px rgba(213, 213, 213, 0.4); }
+.single_services .services_icon img {
+  width: 300px;             /* lățimea dorită a imaginii */
+  height: 300px;            /* înălțimea dorită */
+  object-fit: cover;        /* taie imaginea frumos dacă nu se potrivește */
+  border: 3px solid #FFA500; /* contur portocaliu */
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 10px 0px rgba(213, 213, 213, 0.4);
+  transition: all 0.3s ease-in-out;
+}
 
+/* Efect la hover */
+.single_services .services_icon img:hover {
+  border-color: #FF7300; /* portocaliu mai intens */
+  box-shadow: 0 0 15px rgba(255, 115, 0, 0.6);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.slider_title {
+  font-size: 32px; /* default pentru desktop */
+}
+
+@media (max-width: 768px) {
+  .slider_title {
+    font-size: 20px; /* mai mic pe mobile */
+  }
+}
 .single_services .services_content {
   margin-top: 25px; }
   .single_services .services_content .title {
@@ -328,6 +355,21 @@ a:hover {
 
   .single_services .services_content p {
     margin-top: 25px; }
+.service-image {
+    width: 100px; /* sau cât ai nevoie */
+    height: 100px;
+    border: 3px solid #FFA500; /* portocaliu */
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.service-image:hover {
+    border-color: #FF7300; /* portocaliu mai intens */
+    box-shadow: 0 0 12px rgba(255, 115, 0, 0.6);
+    transform: scale(1.05);
+    cursor: pointer;
+}
 
 
 
