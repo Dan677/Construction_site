@@ -522,6 +522,25 @@ a:hover {
     line-height: 1.2; /* ca să nu fie prea înalt */
   }
 }
+.partner-logos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.partner-logos-container img {
+    max-width: 150px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    border: 2px solid transparent;
+}
+
+/* Modifică acest bloc de cod */
+.partner-logos-container img:hover {
+    transform: scale(1.05); /* Mărește ușor imaginea */
+    border-color: #f39c12; /* Aici am schimbat culoarea în portocaliu */
+    border-width: 4px; /* Aici am făcut conturul mai gros */
+}
 /* Ajustare footer pe mobile */
 @media (max-width: 767px) {
   .footer_title {
