@@ -516,7 +516,36 @@ a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   transition: transform 0.3s;
 }
-
+@media (max-width: 767px) {
+  .slider_title {
+    font-size: 24px; /* ajustează după preferință */
+    line-height: 1.2; /* ca să nu fie prea înalt */
+  }
+}
+/* Ajustare footer pe mobile */
+@media (max-width: 767px) {
+  .footer_title {
+    font-size: 16px; /* mai mic decât pe desktop */
+    margin-bottom: 10px;
+  }
+  .footer_link img {
+    max-width: 100px; /* ajustează după preferință */
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .footer_link ul.link li a {
+    font-size: 14px; /* reduce dimensiunea textului din link-uri */
+    line-height: 1.4;
+  }
+  .footer_link_wrapper {
+    flex-direction: column; /* link-urile se vor așeza pe verticală */
+    align-items: flex-start;
+  }
+  .footer_link {
+    margin-bottom: 20px;
+  }
+}
 /* Efect hover */
 .whatsapp-button:hover {
   transform: scale(1.1);
