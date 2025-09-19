@@ -528,7 +528,6 @@ a:hover {
     gap: 10px;
     align-items: flex-start;
 }
-
 .partner-logos-container img {
     max-width: 150px;
     transition: transform 0.3s ease, border-color 0.3s ease;

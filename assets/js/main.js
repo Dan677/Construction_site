@@ -98,7 +98,18 @@ if (localStorage.getItem('darkMode') === 'enabled') {
     icon.classList.remove('fa-moon');
     icon.classList.add('fa-sun'); // Schimbă icoana la soare pentru light mode
 }
+const toggleButton = document.getElementById('toggleButton');
+const displayText = document.getElementById('displayText');
 
+toggleButton.addEventListener('click', function() {
+    if (displayText.style.display === 'none' || displayText.style.display === '') {
+        displayText.style.display = 'block'; // block ca să fie vizibil clar
+        toggleButton.textContent = 'Închide';
+    } else {
+        displayText.style.display = 'none';
+        toggleButton.textContent = 'Citește mai mult';
+    }
+});
 // Schimbă între dark mode și light mode la click
 darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
