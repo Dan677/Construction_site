@@ -518,7 +518,7 @@ a:hover {
 }
 @media (max-width: 767px) {
   .slider_title {
-    font-size: 24px; /* ajustează după preferință */
+    font-size: 20px; /* ajustează după preferință */
     line-height: 1.2; /* ca să nu fie prea înalt */
   }
 }
