@@ -41,9 +41,6 @@ body.dark-mode .highlight {
 #darkModeToggle:hover {
   background-color: #e07b00;
 }
-.logo {
-    background-image: url('assets/Construct_Logo.png');
-}
 /* Icone (lună/soare) */
 #darkModeToggle i {
   font-size: 20px;
@@ -64,9 +61,6 @@ body.dark-mode #icon {
 body.dark-mode #icon {
   color: #f1c40f; /* Culoare galben pentru luna */
 }
-
-/
-
 * {
   margin: 0;
   padding: 0;
@@ -533,7 +527,6 @@ a:hover {
     transition: transform 0.3s ease, border-color 0.3s ease;
     border: 2px solid transparent;
 }
-
 /* Modifică acest bloc de cod */
 .partner-logos-container img:hover {
     transform: scale(1.05); /* Mărește ușor imaginea */
