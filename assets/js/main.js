@@ -103,11 +103,12 @@ const displayText = document.getElementById('displayText');
 
 toggleButton.addEventListener('click', function() {
     if (displayText.style.display === 'none' || displayText.style.display === '') {
-        displayText.style.display = 'block'; // block ca să fie vizibil clar
+        displayText.style.display = 'block';
         toggleButton.textContent = 'Închide';
     } else {
         displayText.style.display = 'none';
-        toggleButton.textContent = 'Citește mai mult';
+        // Aici pui textul original al butonului
+        toggleButton.textContent = 'Unde ne deplasăm';
     }
 });
 // Schimbă între dark mode și light mode la click
